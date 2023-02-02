@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\remcobrosky\\OneDrive\\Repos\\power-bi-embedded\\spafrontend\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\remcobrosky\\OneDrive\\Repos\\power-bi-embedded\\spafrontend\\wwwroot\\js\\authConfig.js",
+      "PackagePath": "staticwebassets\\js\\authConfig.js"
+    },
+    {
+      "Id": "C:\\Users\\remcobrosky\\OneDrive\\Repos\\power-bi-embedded\\spafrontend\\wwwroot\\js\\authPopup.js",
+      "PackagePath": "staticwebassets\\js\\authPopup.js"
+    },
+    {
+      "Id": "C:\\Users\\remcobrosky\\OneDrive\\Repos\\power-bi-embedded\\spafrontend\\wwwroot\\js\\authRedirect.js",
+      "PackagePath": "staticwebassets\\js\\authRedirect.js"
+    },
+    {
+      "Id": "C:\\Users\\remcobrosky\\OneDrive\\Repos\\power-bi-embedded\\spafrontend\\wwwroot\\js\\ui.js",
+      "PackagePath": "staticwebassets\\js\\ui.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.spafrontend.props",
+      "PackagePath": "build\\spafrontend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.spafrontend.props",
+      "PackagePath": "buildMultiTargeting\\spafrontend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.spafrontend.props",
+      "PackagePath": "buildTransitive\\spafrontend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.spafrontend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
