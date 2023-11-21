@@ -1,11 +1,23 @@
-﻿function listReports(reportlist) {
-    var select = document.getElementById("reports");
+﻿function listReports(report) {
+    var reportbuttons = document.getElementById("reportbuttons");
 
-    for (var i = 0; i < reportlist.length; i++) {
-        var item = document.createElement("option")
-        item.text = reportlist[i].reportName;
-        item.value = JSON.stringify(reportlist[i]);
-        select.add(item);
+    var reportlist = report.embedReport;
+
+    for (let i = 0; i < reportlist.length; i++) {
+        let itemContainer = document.createElement("div")
+        let item = document.createElement("button");
+        item.innerHTML = reportlist[i].reportName;
+        item.classList.add("btn")
+        item.classList.add("btn-primary")
+        item.classList.add("btn-100")
+        item.onclick = function () {
+            loadReport(report, i); 
+        };
+
+
+        
+        itemContainer.appendChild(item)
+        reportbuttons.appendChild(itemContainer);
     }
 }
 
@@ -29,8 +41,8 @@ function callApi(endpoint, token) {
 
             if (response) {
                 logMessage('Reports Found: ' + response.embedReport.length);
-                listReports(response.embedReport);
-                loadReport(response);
+                listReports(response);
+                loadReport(response, 0);
             }
 
             return response;

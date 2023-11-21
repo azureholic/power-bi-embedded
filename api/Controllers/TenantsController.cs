@@ -86,7 +86,10 @@ namespace Api.Controllers
                 // Get report info
                 var pbiReport = pbiClient.Reports.GetReportInGroup(workspaceId, reportId);
 
-                datasetIds.Add(Guid.Parse(pbiReport.DatasetId));
+                if (!datasetIds.Contains(Guid.Parse(pbiReport.DatasetId)))
+                {
+                    datasetIds.Add(Guid.Parse(pbiReport.DatasetId));
+                }
 
                 // Add report data for embedding
                 embedReports.Add(new EmbedReport { ReportId = pbiReport.Id, ReportName = pbiReport.Name, EmbedUrl = pbiReport.EmbedUrl });

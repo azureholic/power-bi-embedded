@@ -81,8 +81,8 @@ function embedPowerBIReport(reportMetaData, embedToken) {
     });
 }
 
-function loadReport(reportData) {
-    embedPowerBIReport(reportData.embedReport[0], reportData.embedToken);
+function loadReport(reportData, index) {
+    embedPowerBIReport(reportData.embedReport[index], reportData.embedToken);
     
 }
 
